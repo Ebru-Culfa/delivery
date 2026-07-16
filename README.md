@@ -1,31 +1,4 @@
-# Delivery Web Application
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/dzX91-qd)
+# Delivery Pizza Service
 
-A web application developed during the **Web Technologies** course at **OTH Regensburg**.
-
-## Technologies
-
-- HTML5
-- CSS3
-- JavaScript
-- Node.js
-- Express.js
-- Handlebars
-- PostgreSQL
-
-## Implemented Features
-
-- Dynamic menu loaded from a PostgreSQL database
-- User registration
-- User login and logout
-- Dynamic page rendering using Handlebars
-- Responsive web interface
-
-## What I learned
-
-During this project I gained practical experience with:
-
-- Express routing
-- Template engines (Handlebars)
-- PostgreSQL databases
-- User authentication
-- Full-stack web application development
+Starter project for the Delivery Pizza Service.

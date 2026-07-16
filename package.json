@@ -1,0 +1,30 @@
+{
+  "name": "studienleistung-mi-delivery-webtechnologien-sose-26-ebruculfa",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/dzX91-qd)\r # Delivery Pizza Service",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OTHRegensburgMedieninformatik/studienleistung-mi-delivery-webtechnologien-sose-26-EbruCulfa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/OTHRegensburgMedieninformatik/studienleistung-mi-delivery-webtechnologien-sose-26-EbruCulfa/issues"
+  },
+  "homepage": "https://github.com/OTHRegensburgMedieninformatik/studienleistung-mi-delivery-webtechnologien-sose-26-EbruCulfa#readme",
+  "dependencies": {
+    "csv-parse": "^6.2.1",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-handlebars": "^9.0.1",
+    "express-session": "^1.19.0",
+    "hbs": "^4.2.1",
+    "pg": "^8.21.0"
+  }
+}
