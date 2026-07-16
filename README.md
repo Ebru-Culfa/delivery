@@ -25,3 +25,22 @@ During this project I gained practical experience with:
 - PostgreSQL databases
 - User authentication
 - Full-stack web application development
+
+
+## 📸 Preview
+
+### Product Menu
+
+![Products](screenshots/delivery-products.png)
+
+### Home Page
+
+![Home](screenshots/delivery-home.png)
+
+### Registration
+
+![Registration](screenshots/delivery-registration.png)
+
+### Logged-in User
+
+![After Login](screenshots/delivery-after-login.png)
