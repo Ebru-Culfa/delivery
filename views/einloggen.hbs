@@ -1,0 +1,23 @@
+<h1>Einloggen</h1>
+
+<form action="/einloggen" method="post">
+    <div class="form-group mb-3">
+        <label for="inputEmail">Email</label>
+        <input type="text" class="form-control" id="inputEmail" placeholder="Email" name="email">
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="inputPassword">Passwort</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Passwort" name="password">
+    </div>
+
+    <div class="form-group mb-3">
+        <button type="submit" class="btn btn-primary">Einloggen</button>
+    </div>
+</form>
+
+{{#if login_error}}
+    <div class="alert alert-danger" role="alert">
+        {{login_error}}
+    </div>
+{{/if}}

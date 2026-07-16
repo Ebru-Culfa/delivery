@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome to Delivery</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" href="/">Delivery</a>
+                </li>
+
+                {{#if user}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/produkte?category=pizza">Speisekarte</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="/ausloggen">Ausloggen</a>
+                </li>
+
+                {{else}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/registrieren">Registrieren</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/einloggen">Einloggen</a>
+                </li>
+                {{/if}}
+            </ul>
+
+            {{#if user}}
+                <span class="navbar-text fw-bold">Hallo {{user.name}} {{user.surname}} </span>
+            {{/if}}
+
+        </div>
+    </nav>
+
+
+    <div class="p-0 m-0 border-0 bd-example m-0 border-0">
+        <div class="card border-0 mb-8">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    {{{body}}}
+                </div>
+
+                {{#if user}}
+                <div class="col-md-4 mt-4">
+                    <div class="card shadow-sm border border-light rounded bg-light">
+                        <h5 class="card-header d-flex justify-content-between bg-light py-3">
+                            <div class="fw-bold">Summe</div>
+                            <div class="fw-bold">0,00 €</div>
+                        </h5>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary d-flex justify-content-between fw-bold py-2">
+                                <div>0 Artikel | 0,00 €</div>
+                                <div>WEITER</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="p-0 m-0 border-0 bd-example m-0 border-0">
+        <div class="bg-light card text-center">
+            <div class="card-body">
+                <h5 class="card-body">KONTAKT</h5>
+                    <p class="card-text">Delivery Pizza<br>Römerstr.37<br>93047 Regensburg</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

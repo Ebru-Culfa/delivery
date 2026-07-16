@@ -1,0 +1,38 @@
+<form action="/produkte">
+    <div class="container m-2">
+        <div class="row">
+            <div class="col-md-10 mt-3">
+                <select class="form-select" name="category" onchange='if(this.value !=0) {this.form.submit();}'>
+                    <option value="pizza">Pizza</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="salat">Salat</option>
+                    <option value="beverage">Getränke</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</form>
+
+ <div action="/" method="POST">
+    {{#each products}}
+        <div class="card mb-3 m-3">
+            <div class="row g-2">
+                <div class="col-md-4">
+                    <img src="{{imageuri}}" class="card-img rounded p-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{name}}</h5><br>
+                        <p class="card-text">{{priceEuro}}</p><br>
+                        <p class="card-text fst-italic">{{description}}</p>
+                        <button type="button" class="btn btn-outline-dark position-absolute bottom-0 end-0 m-5">Auswählen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+ </div>
+
+
+
+

@@ -1,0 +1,33 @@
+<h1>Registrieren</h1>
+
+<form action="/registrieren" method="post">
+    <div class="form-group mb-3">
+        <label for="inputname">Vorname</label>
+        <input type="text" class="form-control" id="inputname" placeholder="Vorname" name="name">
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="inputsurname">Nachname</label>
+        <input type="text" class="form-control" id="inputsurname" placeholder="Nachname" name="surname">
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="inputEmail">Email</label>
+        <input type="text" class="form-control" id="inputEmail" placeholder="Email" name="email">
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="inputPassword">Passwort</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Passwort" name="password">
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Registrieren</button>
+    </div>
+</form>
+
+{{#if registration_error}}
+    <div class="alert alert-danger" role="alert">
+        {{registration_error}}
+    </div>
+{{/if}}
