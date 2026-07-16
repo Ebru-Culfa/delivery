@@ -29,10 +29,6 @@ During this project I gained practical experience with:
 
 ## 📸 Preview
 
-### Product Menu
-
-![Products](screenshots/delivery-products.png)
-
 ### Home Page
 
 ![Home](screenshots/delivery-home.png)
@@ -44,3 +40,7 @@ During this project I gained practical experience with:
 ### Logged-in User
 
 ![After Login](screenshots/delivery-after-login.png)
+
+### Product Menu
+
+![Products](screenshots/delivery-products.png)
